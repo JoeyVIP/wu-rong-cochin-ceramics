@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="吳榮交趾陶收藏諮詢 - 預約鑑賞、作品諮詢、收藏服務">
+    <title>收藏諮詢 - 吳榮交趾陶</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poiret+One&family=Noto+Serif+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/inquiry.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">吳榮</span>
+                <span class="logo-subtitle">Wu Rong</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">首頁</a></li>
+                <li><a href="master.html" class="nav-link">關於大師</a></li>
+                <li><a href="collection.html" class="nav-link">作品典藏</a></li>
+                <li><a href="masterpiece.html" class="nav-link">《出嫁》</a></li>
+                <li><a href="inquiry.html" class="nav-link nav-link-cta active">收藏諮詢</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">收藏諮詢</h1>
+            <p class="page-subtitle">開啟您的藝術典藏之旅</p>
+        </div>
+    </section>
+
+    <!-- Inquiry Info -->
+    <section class="inquiry-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-content">
+                    <span class="section-tag">專業服務</span>
+                    <h2 class="section-title">我們提供的服務</h2>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="service-text">
+                                <h3>作品鑑賞</h3>
+                                <p>預約工作室參觀，近距離欣賞吳榮大師的交趾陶藝術作品，了解每件作品背後的故事與技術細節</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="service-text">
+                                <h3>收藏諮詢</h3>
+                                <p>提供專業的收藏建議，協助您選擇適合的作品，包括尺寸、風格、價格等完整資訊</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                </svg>
+                            </div>
+                            <div class="service-text">
+                                <h3>訂製創作</h3>
+                                <p>接受特定主題或尺寸的訂製創作，與大師共同打造專屬於您的藝術珍品（訂製期約 6-12 個月）</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="service-text">
+                                <h3>藝術投資</h3>
+                                <p>作為台灣交趾陶的代表性藝術家，吳榮大師的作品具有長期收藏價值與藝術投資潛力</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>聯絡資訊</h3>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <p>inquiry@wurong-ceramics.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>電話</strong>
+                                <p>+886-XXX-XXXXXX</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <strong>工作室</strong>
+                                <p>台灣雲林斗六（預約制）</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            <div>
+                                <strong>服務時間</strong>
+                                <p>週一至週五 10:00-17:00<br>（週末及國定假日需預約）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <span class="section-tag">立即聯絡</span>
+                    <h2 class="section-title">提交諮詢表單</h2>
+                    <p class="form-desc">請填寫以下表單，我們將於 2 個工作日內回覆您</p>
+                </div>
+
+                <form class="inquiry-form" id="inquiryForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="請輸入您的姓名">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">電話</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+886-XXX-XXXXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiry_type">諮詢類型 *</label>
+                            <select id="inquiry_type" name="inquiry_type" required>
+                                <option value="">請選擇</option>
+                                <option value="visit">預約鑑賞</option>
+                                <option value="collect">收藏諮詢</option>
+                                <option value="custom">訂製創作</option>
+                                <option value="investment">藝術投資</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="interested_works">感興趣的作品</label>
+                            <input type="text" id="interested_works" name="interested_works" placeholder="例如：出嫁、齊天大聖、雲童系列">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">詳細說明 *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="請詳細說明您的需求或問題"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <p class="form-note">提交表單即表示您同意我們的隱私政策，我們將妥善保管您的個人資訊</p>
+                        <button type="submit" class="btn btn-primary btn-large">提交諮詢</button>
+                    </div>
+                </form>
+
+                <div class="form-success" id="formSuccess" style="display: none;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    <h3>感謝您的諮詢！</h3>
+                    <p>我們已收到您的訊息，將於 2 個工作日內回覆您。</p>
+                    <button class="btn btn-outline" onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('inquiryForm').style.display='block'; document.getElementById('inquiryForm').reset();">提交新諮詢</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">常見問題</span>
+                <h2 class="section-title">收藏前您可能想知道的</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>吳榮交趾陶的作品價格範圍？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>作品價格依尺寸、技術複雜度、創作年代而異，小型作品約 NT$50,000 起，中型作品約 NT$150,000-500,000，大型裝置作品則需個別報價。建議您聯絡我們以獲得詳細資訊。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>如何鑑別吳榮作品的真偽？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>每件吳榮作品底部都有大師親筆簽名與年份標記，並附有原作證書。我們建議收藏家直接向官方管道購買，避免仿品風險。如有真偽疑慮，歡迎預約鑑定服務。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>訂製創作的流程與時間？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>訂製流程包括：1. 需求討論與草圖確認（1-2 週）、2. 黏土塑形（2-4 週）、3. 燒製與上釉（3-6 週）、4. 最終調整與交付（1-2 週）。整體約需 6-12 個月，視作品複雜度而定。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>交趾陶作品如何保養？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>交趾陶作品應避免陽光直射與潮濕環境，建議放置於恆溫恆濕的室內空間。清潔時使用柔軟乾布輕拭即可，避免使用化學清潔劑。我們提供專業的保養諮詢與修復服務。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>是否提供國際運送服務？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>是的，我們提供全球運送服務。作品將以專業藝術品包裝，並投保全額運送保險。運費與清關手續費依目的地而異，詳情請聯絡我們報價。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>作品是否具有增值潛力？</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>吳榮大師作為台灣交趾陶的代表性藝術家，其作品在國際拍賣市場上已有穩定表現。2020 年法國馬賽巡展後，國際收藏家對其作品的關注度顯著提升。然而，藝術收藏應以欣賞為主，投資為輔。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">吳榮交趾陶</h4>
+                    <p class="footer-desc">台灣葉王派系傳人<br>國家民族工藝獎得主<br>當代交趾陶藝術的國際代表</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">快速連結</h4>
+                    <ul class="footer-links">
+                        <li><a href="master.html">關於大師</a></li>
+                        <li><a href="collection.html">作品典藏</a></li>
+                        <li><a href="masterpiece.html">《出嫁》</a></li>
+                        <li><a href="inquiry.html">收藏諮詢</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">榮譽紀錄</h4>
+                    <ul class="footer-links">
+                        <li>國家民族工藝獎</li>
+                        <li>2020 法國馬賽巡展</li>
+                        <li>林添木嫡傳弟子</li>
+                        <li>葉王派系第三代</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">聯絡資訊</h4>
+                    <ul class="footer-links">
+                        <li>Email: inquiry@wurong-ceramics.com</li>
+                        <li>Tel: +886-XXX-XXXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 吳榮交趾陶 Wu Rong Cochin Ceramics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/inquiry.js"></script>
+</body>
+</html>

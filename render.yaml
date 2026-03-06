@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: wu-rong-cochin-ceramics
+    env: static
+    buildCommand: echo "Build complete"
+    staticPublishPath: .

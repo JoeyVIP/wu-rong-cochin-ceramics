@@ -1,0 +1,235 @@
+/* Collection Navigation */
+.collection-nav-section {
+  padding: var(--space-md) 0;
+  background: var(--pure-white);
+  border-bottom: 1px solid var(--gray-300);
+  position: sticky;
+  top: 72px;
+  z-index: 100;
+}
+
+.collection-nav {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding: var(--space-sm) 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.collection-nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.collection-nav::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: 2px;
+}
+
+.collection-tab {
+  flex-shrink: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  color: var(--gray-700);
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.collection-tab:hover {
+  color: var(--wu-carmine);
+  border-color: var(--wu-carmine);
+}
+
+.collection-tab.active {
+  background: var(--wu-carmine);
+  color: var(--pure-white);
+  border-color: var(--wu-carmine);
+}
+
+/* Collection Sections */
+.collection-section {
+  padding: var(--space-2xl) 0;
+}
+
+.collection-section:nth-child(even) {
+  background: var(--white);
+}
+
+.collection-section:nth-child(odd) {
+  background: var(--pure-white);
+}
+
+.collection-section.hidden {
+  display: none;
+}
+
+.category-header {
+  margin-bottom: var(--space-xl);
+  max-width: 800px;
+}
+
+.category-desc {
+  font-size: 1.1rem;
+  color: var(--gray-700);
+  line-height: 1.8;
+  margin-top: var(--space-md);
+}
+
+/* Works Grid */
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+}
+
+.work-detail-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+  background: var(--pure-white);
+  border: 1px solid var(--gray-300);
+  transition: all var(--transition-normal);
+}
+
+.work-detail-card:hover {
+  border-color: var(--wu-carmine);
+  box-shadow: 0 10px 30px rgba(184, 49, 90, 0.1);
+}
+
+.work-detail-card.featured {
+  border: 2px solid var(--wu-carmine);
+}
+
+.work-image-large {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  overflow: hidden;
+  background: var(--gray-100);
+}
+
+.work-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.work-category {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--wu-carmine);
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--wu-carmine);
+}
+
+.work-name {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.work-description {
+  font-size: 1.05rem;
+  color: var(--gray-700);
+  line-height: 1.9;
+}
+
+.work-specs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--gray-300);
+}
+
+.spec-item {
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.spec-item strong {
+  color: var(--gray-900);
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.work-link-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--wu-carmine);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: gap var(--transition-fast);
+  width: fit-content;
+  margin-top: var(--space-sm);
+}
+
+.work-link-detail:hover {
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .work-detail-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Season Timeline (for Philosophy section) */
+.season-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  margin-top: var(--space-xl);
+}
+
+.season-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.season-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  overflow: hidden;
+}
+
+.season-content {
+  max-width: 600px;
+}
+
+.season-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--gray-900);
+  margin-bottom: var(--space-md);
+}
+
+.season-desc {
+  font-size: 1.1rem;
+  color: var(--gray-700);
+  line-height: 1.9;
+}
+
+.season-item:nth-child(even) .season-image {
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .season-item {
+    grid-template-columns: 1fr 1fr;
+  }
+}

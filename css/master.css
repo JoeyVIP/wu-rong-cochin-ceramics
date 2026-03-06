@@ -1,0 +1,325 @@
+/* ===========================================
+   MASTER PAGE STYLES
+   =========================================== */
+
+/* Page Hero */
+.page-hero {
+  margin-top: 72px;
+  padding: var(--space-2xl) 0 var(--space-xl);
+  background: linear-gradient(135deg, var(--white), var(--ice-blue-light));
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 300;
+  color: var(--gray-900);
+  margin-bottom: var(--space-md);
+  line-height: 1.1;
+}
+
+.page-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--gray-700);
+  letter-spacing: 0.08em;
+}
+
+/* Master Story Section */
+.master-story-section {
+  padding: var(--space-2xl) 0;
+  background: var(--pure-white);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.story-image {
+  position: relative;
+}
+
+.story-image-placeholder {
+  width: 100%;
+  padding-top: 120%;
+  background: linear-gradient(135deg, var(--wu-carmine-light), var(--ice-blue-light));
+  opacity: 0.4;
+  border: 1px solid var(--gray-300);
+}
+
+.story-caption {
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  font-style: italic;
+  text-align: center;
+}
+
+.story-content {
+  max-width: 700px;
+}
+
+.story-text p {
+  margin-bottom: var(--space-md);
+  color: var(--gray-700);
+  line-height: 1.9;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.story-text p:first-of-type::first-letter {
+  font-size: 3.5rem;
+  font-family: var(--font-serif);
+  float: left;
+  line-height: 0.9;
+  margin: 0.1em 0.1em 0 0;
+  color: var(--wu-carmine);
+}
+
+@media (min-width: 1024px) {
+  .story-grid {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+/* Four Pillars Section */
+.pillars-section {
+  padding: var(--space-2xl) 0;
+  background: var(--white);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.pillar-card {
+  position: relative;
+  padding: var(--space-xl);
+  background: var(--pure-white);
+  border: 2px solid var(--gray-300);
+  transition: all var(--transition-normal);
+}
+
+.pillar-card:hover {
+  border-color: var(--wu-carmine);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(184, 49, 90, 0.15);
+}
+
+.pillar-number {
+  position: absolute;
+  top: -20px;
+  left: var(--space-lg);
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--wu-carmine);
+  opacity: 0.15;
+  line-height: 1;
+}
+
+.pillar-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--space-md);
+  color: var(--wu-carmine);
+}
+
+.pillar-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  margin-bottom: var(--space-md);
+  color: var(--gray-900);
+}
+
+.pillar-desc {
+  color: var(--gray-700);
+  line-height: 1.9;
+  margin-bottom: var(--space-lg);
+  font-size: 1.05rem;
+}
+
+.pillar-tech {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--gray-300);
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.tech-item strong {
+  color: var(--wu-carmine);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Timeline Section */
+.timeline-section {
+  padding: var(--space-2xl) 0;
+  background: var(--pure-white);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: var(--space-xl) auto 0;
+  padding-left: var(--space-lg);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--wu-carmine), var(--ice-blue-dark));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-xl);
+  padding-left: var(--space-lg);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: var(--wu-carmine);
+  border: 3px solid var(--pure-white);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--wu-carmine);
+}
+
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--wu-carmine);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+  color: var(--gray-900);
+}
+
+.timeline-content p {
+  color: var(--gray-700);
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    padding-left: calc(50% + var(--space-lg));
+  }
+
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    padding-left: 0;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: calc(50% + var(--space-lg));
+    padding-left: 0;
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: calc(50% + var(--space-lg));
+    padding-right: 0;
+  }
+
+  .timeline-item::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Honors Section */
+.honors-section {
+  padding: var(--space-2xl) 0;
+  background: var(--white);
+}
+
+.honors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.honor-card {
+  text-align: center;
+  padding: var(--space-xl);
+  background: var(--pure-white);
+  border: 1px solid var(--gray-300);
+  transition: all var(--transition-normal);
+}
+
+.honor-card:hover {
+  border-color: var(--wu-carmine);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(184, 49, 90, 0.1);
+}
+
+.honor-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.honor-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+  color: var(--gray-900);
+}
+
+.honor-card p {
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .honors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .honors-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

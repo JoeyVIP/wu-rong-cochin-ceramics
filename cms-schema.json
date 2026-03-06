@@ -1,0 +1,291 @@
+{
+  "version": "1.0",
+  "sections": [
+    {
+      "key": "brand",
+      "title": "品牌資訊",
+      "icon": "Store",
+      "fields": [
+        { "key": "name", "label": "品牌名稱", "type": "text", "required": true },
+        { "key": "name_en", "label": "英文名稱", "type": "text", "required": true },
+        { "key": "tagline", "label": "品牌標語", "type": "text" },
+        { "key": "email", "label": "聯絡 Email", "type": "email", "required": true },
+        { "key": "phone", "label": "聯絡電話", "type": "phone" },
+        { "key": "address", "label": "工作室地址", "type": "text" }
+      ]
+    },
+    {
+      "key": "hero",
+      "title": "首頁主視覺",
+      "icon": "Image",
+      "fields": [
+        { "key": "title", "label": "主標題", "type": "text", "required": true },
+        { "key": "subtitle", "label": "副標題", "type": "text", "required": true },
+        {
+          "key": "badges",
+          "label": "榮譽標章",
+          "type": "list",
+          "items": { "type": "text" }
+        }
+      ]
+    },
+    {
+      "key": "philosophy",
+      "title": "藝術哲學（四大支柱）",
+      "icon": "Lightbulb",
+      "fields": [
+        { "key": "section_tag", "label": "區塊標籤", "type": "text" },
+        { "key": "section_title", "label": "區塊標題", "type": "text" },
+        {
+          "key": "pillars",
+          "label": "四大支柱",
+          "type": "repeater",
+          "fields": [
+            { "key": "title", "label": "支柱標題", "type": "text", "required": true },
+            { "key": "description", "label": "支柱說明", "type": "textarea", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "master",
+      "title": "關於大師",
+      "icon": "User",
+      "fields": [
+        { "key": "page_title", "label": "頁面標題", "type": "text", "required": true },
+        { "key": "page_subtitle", "label": "頁面副標題", "type": "text" },
+        { "key": "story_title", "label": "故事標題", "type": "text" },
+        { "key": "story_p1", "label": "故事段落一", "type": "textarea" },
+        { "key": "story_p2", "label": "故事段落二", "type": "textarea" },
+        { "key": "story_p3", "label": "故事段落三", "type": "textarea" },
+        { "key": "story_p4", "label": "故事段落四", "type": "textarea" },
+        { "key": "story_p5", "label": "故事段落五", "type": "textarea" }
+      ]
+    },
+    {
+      "key": "technical_pillars",
+      "title": "四大技術支柱（詳細版）",
+      "icon": "Zap",
+      "fields": [
+        {
+          "key": "pillars",
+          "label": "技術支柱",
+          "type": "repeater",
+          "fields": [
+            { "key": "number", "label": "編號", "type": "text" },
+            { "key": "title", "label": "標題", "type": "text", "required": true },
+            { "key": "description", "label": "詳細說明", "type": "textarea", "required": true },
+            { "key": "tech_breakthrough", "label": "技術突破", "type": "text" },
+            { "key": "tech_achievement", "label": "應用成果", "type": "text" },
+            { "key": "tech_works", "label": "代表作品", "type": "text" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "timeline",
+      "title": "藝術歷程時間軸",
+      "icon": "Clock",
+      "fields": [
+        {
+          "key": "events",
+          "label": "歷程事件",
+          "type": "repeater",
+          "fields": [
+            { "key": "year", "label": "年代", "type": "text", "required": true },
+            { "key": "title", "label": "事件標題", "type": "text", "required": true },
+            { "key": "description", "label": "事件說明", "type": "text", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "honors",
+      "title": "榮譽與獎項",
+      "icon": "Award",
+      "fields": [
+        {
+          "key": "items",
+          "label": "榮譽項目",
+          "type": "repeater",
+          "fields": [
+            { "key": "icon", "label": "圖示emoji", "type": "text" },
+            { "key": "title", "label": "標題", "type": "text", "required": true },
+            { "key": "description", "label": "說明", "type": "text", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "collection_heritage",
+      "title": "作品典藏 - 傳承經典",
+      "icon": "Package",
+      "fields": [
+        { "key": "category_tag", "label": "分類標籤", "type": "text" },
+        { "key": "category_title", "label": "分類標題", "type": "text" },
+        { "key": "category_desc", "label": "分類描述", "type": "textarea" },
+        {
+          "key": "works",
+          "label": "作品列表",
+          "type": "repeater",
+          "fields": [
+            { "key": "name", "label": "作品名稱", "type": "text", "required": true },
+            { "key": "description", "label": "作品說明", "type": "textarea", "required": true },
+            { "key": "size", "label": "尺寸", "type": "text" },
+            { "key": "technique", "label": "技法", "type": "text" },
+            { "key": "year", "label": "年代", "type": "text" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "collection_contemporary",
+      "title": "作品典藏 - 當代意象",
+      "icon": "Package",
+      "fields": [
+        { "key": "category_tag", "label": "分類標籤", "type": "text" },
+        { "key": "category_title", "label": "分類標題", "type": "text" },
+        { "key": "category_desc", "label": "分類描述", "type": "textarea" },
+        {
+          "key": "works",
+          "label": "作品列表",
+          "type": "repeater",
+          "fields": [
+            { "key": "name", "label": "作品名稱", "type": "text", "required": true },
+            { "key": "description", "label": "作品說明", "type": "textarea", "required": true },
+            { "key": "size", "label": "尺寸", "type": "text" },
+            { "key": "technique", "label": "技法", "type": "text" },
+            { "key": "year", "label": "年代", "type": "text" },
+            { "key": "exhibition", "label": "展覽紀錄", "type": "text" },
+            { "key": "is_featured", "label": "是否為特色作品", "type": "boolean" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "collection_philosophy",
+      "title": "作品典藏 - 生命體悟（雲童系列）",
+      "icon": "Package",
+      "fields": [
+        { "key": "category_tag", "label": "分類標籤", "type": "text" },
+        { "key": "category_title", "label": "分類標題", "type": "text" },
+        { "key": "category_desc", "label": "分類描述", "type": "textarea" },
+        {
+          "key": "seasons",
+          "label": "季節作品",
+          "type": "repeater",
+          "fields": [
+            { "key": "title", "label": "季節標題", "type": "text", "required": true },
+            { "key": "description", "label": "季節說明", "type": "textarea", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "collection_installation",
+      "title": "作品典藏 - 大型裝置",
+      "icon": "Package",
+      "fields": [
+        { "key": "category_tag", "label": "分類標籤", "type": "text" },
+        { "key": "category_title", "label": "分類標題", "type": "text" },
+        { "key": "category_desc", "label": "分類描述", "type": "textarea" },
+        {
+          "key": "works",
+          "label": "作品列表",
+          "type": "repeater",
+          "fields": [
+            { "key": "name", "label": "作品名稱", "type": "text", "required": true },
+            { "key": "description", "label": "作品說明", "type": "textarea", "required": true },
+            { "key": "size", "label": "尺寸", "type": "text" },
+            { "key": "weight", "label": "重量", "type": "text" },
+            { "key": "technique", "label": "技法", "type": "text" },
+            { "key": "year", "label": "年代", "type": "text" },
+            { "key": "collection", "label": "典藏地", "type": "text" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "masterpiece",
+      "title": "《出嫁》專屬頁面",
+      "icon": "Star",
+      "fields": [
+        { "key": "title", "label": "作品名稱", "type": "text", "required": true },
+        { "key": "subtitle", "label": "副標題", "type": "text" },
+        { "key": "overview_p1", "label": "概述段落一", "type": "textarea" },
+        { "key": "overview_p2", "label": "概述段落二", "type": "textarea" },
+        { "key": "year", "label": "創作年代", "type": "text" },
+        { "key": "size", "label": "尺寸", "type": "text" },
+        { "key": "weight", "label": "重量", "type": "text" },
+        { "key": "technique", "label": "核心技法", "type": "text" },
+        { "key": "exhibition", "label": "展覽紀錄", "type": "text" },
+        { "key": "temperature", "label": "燒製溫度", "type": "text" },
+        { "key": "firing_times", "label": "燒製次數", "type": "text" },
+        {
+          "key": "details",
+          "label": "技術細節",
+          "type": "repeater",
+          "fields": [
+            { "key": "title", "label": "細節標題", "type": "text", "required": true },
+            { "key": "description", "label": "細節說明", "type": "textarea", "required": true },
+            { "key": "tech_point_1", "label": "技術亮點1", "type": "text" },
+            { "key": "tech_point_2", "label": "技術亮點2", "type": "text" },
+            { "key": "tech_point_3", "label": "技術亮點3", "type": "text" }
+          ]
+        },
+        { "key": "quote", "label": "大師引言", "type": "textarea" }
+      ]
+    },
+    {
+      "key": "inquiry",
+      "title": "收藏諮詢頁面",
+      "icon": "Mail",
+      "fields": [
+        { "key": "page_title", "label": "頁面標題", "type": "text" },
+        { "key": "page_subtitle", "label": "頁面副標題", "type": "text" },
+        { "key": "services_title", "label": "服務標題", "type": "text" },
+        {
+          "key": "services",
+          "label": "服務項目",
+          "type": "repeater",
+          "fields": [
+            { "key": "title", "label": "服務標題", "type": "text", "required": true },
+            { "key": "description", "label": "服務說明", "type": "textarea", "required": true }
+          ]
+        },
+        { "key": "form_title", "label": "表單標題", "type": "text" },
+        { "key": "form_description", "label": "表單說明", "type": "text" },
+        {
+          "key": "faq",
+          "label": "常見問題",
+          "type": "repeater",
+          "fields": [
+            { "key": "question", "label": "問題", "type": "text", "required": true },
+            { "key": "answer", "label": "答案", "type": "textarea", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "footer",
+      "title": "頁尾資訊",
+      "icon": "Layout",
+      "fields": [
+        { "key": "description", "label": "品牌描述", "type": "textarea" },
+        {
+          "key": "quick_links",
+          "label": "快速連結",
+          "type": "list",
+          "items": { "type": "text" }
+        },
+        {
+          "key": "honors_list",
+          "label": "榮譽列表",
+          "type": "list",
+          "items": { "type": "text" }
+        },
+        { "key": "copyright", "label": "版權聲明", "type": "text" }
+      ]
+    }
+  ]
+}

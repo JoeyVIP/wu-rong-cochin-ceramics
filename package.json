@@ -1,0 +1,21 @@
+{
+  "name": "wu-rong-cochin-ceramics",
+  "version": "1.0.0",
+  "description": "吳榮交趾陶品牌官網 - 從天到地的藝術對話",
+  "main": "index.html",
+  "scripts": {
+    "rebuild": "node rebuild.js"
+  },
+  "keywords": [
+    "交趾陶",
+    "台灣工藝",
+    "吳榮",
+    "葉王派系",
+    "當代陶瓷藝術"
+  ],
+  "author": "Wu Rong Cochin Ceramics",
+  "license": "MIT",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}
